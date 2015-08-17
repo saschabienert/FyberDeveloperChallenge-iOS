@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B288B151B7E115300FA79EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B141B7E115300FA79EB /* AppDelegate.swift */; };
+		2B288B171B7E115300FA79EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B161B7E115300FA79EB /* ViewController.swift */; };
+		2B288B1A1B7E115300FA79EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B288B181B7E115300FA79EB /* Main.storyboard */; };
+		2B288B1C1B7E115300FA79EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B288B1B1B7E115300FA79EB /* Images.xcassets */; };
+		2B288B1F1B7E115300FA79EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B288B1D1B7E115300FA79EB /* LaunchScreen.xib */; };
+		2B288B371B7E229B00FA79EB /* FyberSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B361B7E229B00FA79EB /* FyberSDK.swift */; };
+		2B288B3D1B7F93BC00FA79EB /* FyberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B3C1B7F93BC00FA79EB /* FyberTableViewCell.swift */; };
+		2BF1E2091B8124B500447B98 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E2081B8124B500447B98 /* FormViewController.swift */; };
+		2BF1E20A1B823D3500447B98 /* FyberSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B361B7E229B00FA79EB /* FyberSDK.swift */; };
+		2BF1E20B1B823D3900447B98 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E2081B8124B500447B98 /* FormViewController.swift */; };
+		2BF1E20C1B823D3D00447B98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B161B7E115300FA79EB /* ViewController.swift */; };
+		2BF1E20D1B823D4000447B98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B141B7E115300FA79EB /* AppDelegate.swift */; };
+		2BF1E20E1B823D4400447B98 /* FyberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B3C1B7F93BC00FA79EB /* FyberTableViewCell.swift */; };
+		2BF1E2141B82564C00447B98 /* SDKStaticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E2131B82564C00447B98 /* SDKStaticTests.swift */; };
+		2BF1E2161B82665300447B98 /* SDKRandomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E2151B82665300447B98 /* SDKRandomTests.swift */; };
+		87469C620482682837C8F2FE /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9814C02627FC473B860C6EE /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		DF6E3EF40CEC98A5CD98737C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9814C02627FC473B860C6EE /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B288B251B7E115300FA79EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B288B071B7E115300FA79EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B288B0E1B7E115300FA79EB;
+			remoteInfo = FyberDeveloperChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B288B0F1B7E115300FA79EB /* FyberDeveloperChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FyberDeveloperChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B288B131B7E115300FA79EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B288B141B7E115300FA79EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B288B161B7E115300FA79EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B288B191B7E115300FA79EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B288B1B1B7E115300FA79EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2B288B1E1B7E115300FA79EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2B288B241B7E115300FA79EB /* FyberDeveloperChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FyberDeveloperChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B288B291B7E115300FA79EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B288B361B7E229B00FA79EB /* FyberSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FyberSDK.swift; sourceTree = "<group>"; };
+		2B288B3C1B7F93BC00FA79EB /* FyberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FyberTableViewCell.swift; sourceTree = "<group>"; };
+		2BF1E2081B8124B500447B98 /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		2BF1E2131B82564C00447B98 /* SDKStaticTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKStaticTests.swift; sourceTree = "<group>"; };
+		2BF1E2151B82665300447B98 /* SDKRandomTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKRandomTests.swift; sourceTree = "<group>"; };
+		2BF1E21A1B8283CC00447B98 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		B15C8116DC4252A7E5B5501C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C9814C02627FC473B860C6EE /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0B139D7A5FA2536939E69C9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B288B0C1B7E115300FA79EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF6E3EF40CEC98A5CD98737C /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B288B211B7E115300FA79EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87469C620482682837C8F2FE /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EF82F3BB97BA3DE84CFC80D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9814C02627FC473B860C6EE /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B288B061B7E115300FA79EB = {
+			isa = PBXGroup;
+			children = (
+				2BF1E21A1B8283CC00447B98 /* readme.txt */,
+				2B288B111B7E115300FA79EB /* FyberDeveloperChallenge */,
+				2B288B271B7E115300FA79EB /* Tests */,
+				2B288B101B7E115300FA79EB /* Products */,
+				844577173E21E8A3824FD0A7 /* Pods */,
+				1EF82F3BB97BA3DE84CFC80D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2B288B101B7E115300FA79EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B288B0F1B7E115300FA79EB /* FyberDeveloperChallenge.app */,
+				2B288B241B7E115300FA79EB /* FyberDeveloperChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B288B111B7E115300FA79EB /* FyberDeveloperChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				2B288B141B7E115300FA79EB /* AppDelegate.swift */,
+				2BF1E2181B82823100447B98 /* UI */,
+				2BF1E2191B82823A00447B98 /* SDK */,
+				2B288B121B7E115300FA79EB /* Supporting Files */,
+			);
+			path = FyberDeveloperChallenge;
+			sourceTree = "<group>";
+		};
+		2B288B121B7E115300FA79EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B288B1B1B7E115300FA79EB /* Images.xcassets */,
+				2B288B1D1B7E115300FA79EB /* LaunchScreen.xib */,
+				2B288B131B7E115300FA79EB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B288B271B7E115300FA79EB /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2BF1E2131B82564C00447B98 /* SDKStaticTests.swift */,
+				2BF1E2151B82665300447B98 /* SDKRandomTests.swift */,
+				2B288B281B7E115300FA79EB /* Supporting Files */,
+			);
+			name = Tests;
+			path = FyberDeveloperChallengeTests;
+			sourceTree = "<group>";
+		};
+		2B288B281B7E115300FA79EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B288B291B7E115300FA79EB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BF1E2181B82823100447B98 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2B288B181B7E115300FA79EB /* Main.storyboard */,
+				2B288B161B7E115300FA79EB /* ViewController.swift */,
+				2BF1E2081B8124B500447B98 /* FormViewController.swift */,
+				2B288B3C1B7F93BC00FA79EB /* FyberTableViewCell.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		2BF1E2191B82823A00447B98 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				2B288B361B7E229B00FA79EB /* FyberSDK.swift */,
+			);
+			name = SDK;
+			sourceTree = "<group>";
+		};
+		844577173E21E8A3824FD0A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B15C8116DC4252A7E5B5501C /* Pods.debug.xcconfig */,
+				F0B139D7A5FA2536939E69C9 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B288B0E1B7E115300FA79EB /* FyberDeveloperChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B288B2E1B7E115300FA79EB /* Build configuration list for PBXNativeTarget "FyberDeveloperChallenge" */;
+			buildPhases = (
+				A668CDDF687FEBC0DB576119 /* Check Pods Manifest.lock */,
+				2B288B0B1B7E115300FA79EB /* Sources */,
+				2B288B0C1B7E115300FA79EB /* Frameworks */,
+				2B288B0D1B7E115300FA79EB /* Resources */,
+				307B8B3A82E267667A30A039 /* Copy Pods Resources */,
+				41AE289B85F6C6408CCA7867 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FyberDeveloperChallenge;
+			productName = FyberDeveloperChallenge;
+			productReference = 2B288B0F1B7E115300FA79EB /* FyberDeveloperChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B288B231B7E115300FA79EB /* FyberDeveloperChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B288B311B7E115300FA79EB /* Build configuration list for PBXNativeTarget "FyberDeveloperChallengeTests" */;
+			buildPhases = (
+				4A51774543198920E5D3D289 /* Check Pods Manifest.lock */,
+				2B288B201B7E115300FA79EB /* Sources */,
+				2B288B211B7E115300FA79EB /* Frameworks */,
+				2B288B221B7E115300FA79EB /* Resources */,
+				9280E093C1C32462ED465496 /* Embed Pods Frameworks */,
+				16D1D9D605F60C6AF49CF8B8 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B288B261B7E115300FA79EB /* PBXTargetDependency */,
+			);
+			name = FyberDeveloperChallengeTests;
+			productName = FyberDeveloperChallengeTests;
+			productReference = 2B288B241B7E115300FA79EB /* FyberDeveloperChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B288B071B7E115300FA79EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Sascha Bienert";
+				TargetAttributes = {
+					2B288B0E1B7E115300FA79EB = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					2B288B231B7E115300FA79EB = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 2B288B0E1B7E115300FA79EB;
+					};
+				};
+			};
+			buildConfigurationList = 2B288B0A1B7E115300FA79EB /* Build configuration list for PBXProject "FyberDeveloperChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B288B061B7E115300FA79EB;
+			productRefGroup = 2B288B101B7E115300FA79EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B288B0E1B7E115300FA79EB /* FyberDeveloperChallenge */,
+				2B288B231B7E115300FA79EB /* FyberDeveloperChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B288B0D1B7E115300FA79EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B288B1A1B7E115300FA79EB /* Main.storyboard in Resources */,
+				2B288B1F1B7E115300FA79EB /* LaunchScreen.xib in Resources */,
+				2B288B1C1B7E115300FA79EB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B288B221B7E115300FA79EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16D1D9D605F60C6AF49CF8B8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		307B8B3A82E267667A30A039 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41AE289B85F6C6408CCA7867 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A51774543198920E5D3D289 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9280E093C1C32462ED465496 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A668CDDF687FEBC0DB576119 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B288B0B1B7E115300FA79EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B288B171B7E115300FA79EB /* ViewController.swift in Sources */,
+				2B288B371B7E229B00FA79EB /* FyberSDK.swift in Sources */,
+				2B288B3D1B7F93BC00FA79EB /* FyberTableViewCell.swift in Sources */,
+				2BF1E2091B8124B500447B98 /* FormViewController.swift in Sources */,
+				2B288B151B7E115300FA79EB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B288B201B7E115300FA79EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF1E20E1B823D4400447B98 /* FyberTableViewCell.swift in Sources */,
+				2BF1E20B1B823D3900447B98 /* FormViewController.swift in Sources */,
+				2BF1E2141B82564C00447B98 /* SDKStaticTests.swift in Sources */,
+				2BF1E20C1B823D3D00447B98 /* ViewController.swift in Sources */,
+				2BF1E2161B82665300447B98 /* SDKRandomTests.swift in Sources */,
+				2BF1E20D1B823D4000447B98 /* AppDelegate.swift in Sources */,
+				2BF1E20A1B823D3500447B98 /* FyberSDK.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B288B261B7E115300FA79EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B288B0E1B7E115300FA79EB /* FyberDeveloperChallenge */;
+			targetProxy = 2B288B251B7E115300FA79EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B288B181B7E115300FA79EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B288B191B7E115300FA79EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B288B1D1B7E115300FA79EB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B288B1E1B7E115300FA79EB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B288B2C1B7E115300FA79EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B288B2D1B7E115300FA79EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B288B2F1B7E115300FA79EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B15C8116DC4252A7E5B5501C /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FyberDeveloperChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+			};
+			name = Debug;
+		};
+		2B288B301B7E115300FA79EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0B139D7A5FA2536939E69C9 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FyberDeveloperChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+			};
+			name = Release;
+		};
+		2B288B321B7E115300FA79EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B15C8116DC4252A7E5B5501C /* Pods.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FyberDeveloperChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FyberDeveloperChallenge.app/FyberDeveloperChallenge";
+			};
+			name = Debug;
+		};
+		2B288B331B7E115300FA79EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0B139D7A5FA2536939E69C9 /* Pods.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FyberDeveloperChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FyberDeveloperChallenge.app/FyberDeveloperChallenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B288B0A1B7E115300FA79EB /* Build configuration list for PBXProject "FyberDeveloperChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B288B2C1B7E115300FA79EB /* Debug */,
+				2B288B2D1B7E115300FA79EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B288B2E1B7E115300FA79EB /* Build configuration list for PBXNativeTarget "FyberDeveloperChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B288B2F1B7E115300FA79EB /* Debug */,
+				2B288B301B7E115300FA79EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B288B311B7E115300FA79EB /* Build configuration list for PBXNativeTarget "FyberDeveloperChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B288B321B7E115300FA79EB /* Debug */,
+				2B288B331B7E115300FA79EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B288B071B7E115300FA79EB /* Project object */;
+}
