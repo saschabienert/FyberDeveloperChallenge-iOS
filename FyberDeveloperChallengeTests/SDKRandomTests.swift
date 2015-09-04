@@ -11,12 +11,12 @@ import XCTest
 
 class SDKRandomTests: XCTestCase {
     
-    var sdk = FyberSDK(appID: "",userID: "",apiKey: "")
+    var sdk = RequestManager(appID: "",userID: "",apiKey: "")
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        sdk = FyberSDK(appID: "test", userID: "test", apiKey: "e95a21621a1865bcbae3bee89c4d4f84")
+        sdk = RequestManager(appID: "test", userID: "test", apiKey: "e95a21621a1865bcbae3bee89c4d4f84")
     }
     
     override func tearDown() {

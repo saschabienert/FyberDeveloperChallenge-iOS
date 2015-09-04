@@ -8,13 +8,13 @@
 
 import UIKit
 
-class FormViewController: UIViewController {
+class FormViewController: UIViewController, OfferDelegate {
     
     @IBOutlet var appIDTextField: UITextField!
     @IBOutlet var userIDTextField: UITextField!
     @IBOutlet var apiKeyTextField: UITextField!
     @IBOutlet var showOffersButton: UIButton!
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -43,22 +43,32 @@ class FormViewController: UIViewController {
             userDefaults.setObject(userID, forKey: "userID")
             userDefaults.setObject(apiKey, forKey: "apiKey")
             
-            if let vc = self.storyboard?.instantiateViewControllerWithIdentifier("ViewController") as? ViewController
-            {
-                vc.formViewController = self
-                self.presentViewController(vc, animated: true, completion: nil)
-            }
+            
+            let sdk = FyberSDK(appID: appID, userID: userID, apiKey: apiKey)
+            sdk.delegate = self
+            sdk.loadOfferWithHostViewController(self)
         }
     }
     
-    /*
-    // MARK: - Navigation
+    // MARK: - OfferDelegate
     
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
+    func offersDidLoad() {
+        println("offersDidLoad")
     }
-    */
     
+    func offersFailedLoad() {
+        println("offersFailedLoad")
+    }
+    
+    func userClosedOffers() {
+        println("userClosedOffers")
+    }
+    
+    func userChosedOffer(offer: Int) {
+        println("userChosedOffer: ", offer)
+    }
+    
+    func offerDidAppear(offer: Int) {
+        println("offerDidAppear: ", offer)
+    }
 }

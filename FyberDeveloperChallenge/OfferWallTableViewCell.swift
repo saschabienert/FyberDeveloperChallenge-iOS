@@ -1,5 +1,5 @@
 //
-//  FyberTableViewCell.swift
+//  OfferWallTableViewCell.swift
 //  FyberDeveloperChallenge
 //
 //  Created by Sascha Bienert on 15/08/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FyberTableViewCell: UITableViewCell {
+class OfferWallTableViewCell: UITableViewCell {
     
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var teaserLabel: UILabel!

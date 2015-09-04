@@ -11,12 +11,12 @@ import XCTest
 
 class SDKStaticTests: XCTestCase {
     
-    var sdk = FyberSDK(appID: "",userID: "",apiKey: "")
+    var sdk = RequestManager(appID: "",userID: "",apiKey: "")
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        sdk = FyberSDK(appID: "test", userID: "test", apiKey: "e95a21621a1865bcbae3bee89c4d4f84")
+        sdk = RequestManager(appID: "test", userID: "test", apiKey: "e95a21621a1865bcbae3bee89c4d4f84")
     }
     
     override func tearDown() {
@@ -54,7 +54,7 @@ class SDKStaticTests: XCTestCase {
     func testStaticRequestOffers() {
         let expectation = expectationWithDescription("request offers from backend")
         
-        sdk = FyberSDK(appID: "2070", userID: "spiderman", apiKey: "1c915e3b5d42d05136185030892fbb846c278927")
+        sdk = RequestManager(appID: "2070", userID: "spiderman", apiKey: "1c915e3b5d42d05136185030892fbb846c278927")
         sdk.requestOffers() {
             offers in
             if (offers.count > 0)
@@ -78,7 +78,7 @@ class SDKStaticTests: XCTestCase {
     func testStaticRequestOffersWithParameters() {
         let expectation = expectationWithDescription("request offers from backend")
         
-        sdk = FyberSDK(appID: "2070", userID: "spiderman", apiKey: "1c915e3b5d42d05136185030892fbb846c278927")
+        sdk = RequestManager(appID: "2070", userID: "spiderman", apiKey: "1c915e3b5d42d05136185030892fbb846c278927")
         sdk.requestOffersWithParameters([("offer_types", "112"),
             ("ip", "109.235.143.113")]) {
                 offers in

@@ -8,18 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		2B288B151B7E115300FA79EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B141B7E115300FA79EB /* AppDelegate.swift */; };
-		2B288B171B7E115300FA79EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B161B7E115300FA79EB /* ViewController.swift */; };
+		2B288B171B7E115300FA79EB /* OfferWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B161B7E115300FA79EB /* OfferWallViewController.swift */; };
 		2B288B1A1B7E115300FA79EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B288B181B7E115300FA79EB /* Main.storyboard */; };
 		2B288B1C1B7E115300FA79EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B288B1B1B7E115300FA79EB /* Images.xcassets */; };
 		2B288B1F1B7E115300FA79EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B288B1D1B7E115300FA79EB /* LaunchScreen.xib */; };
-		2B288B371B7E229B00FA79EB /* FyberSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B361B7E229B00FA79EB /* FyberSDK.swift */; };
-		2B288B3D1B7F93BC00FA79EB /* FyberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B3C1B7F93BC00FA79EB /* FyberTableViewCell.swift */; };
+		2B288B371B7E229B00FA79EB /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B361B7E229B00FA79EB /* RequestManager.swift */; };
+		2B288B3D1B7F93BC00FA79EB /* OfferWallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B3C1B7F93BC00FA79EB /* OfferWallTableViewCell.swift */; };
+		2B98CE571B999F790033E134 /* OfferWall.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B98CE551B999F790033E134 /* OfferWall.storyboard */; };
+		2B98CE591B99A2530033E134 /* FyberSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B98CE581B99A2530033E134 /* FyberSDK.swift */; };
+		2B99F8511B99A5110055F530 /* FyberSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B98CE581B99A2530033E134 /* FyberSDK.swift */; };
+		2BB2E89F1B99C79200D5F95D /* FyberCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2E89E1B99C79200D5F95D /* FyberCredentials.swift */; };
+		2BB2E8A01B99C79200D5F95D /* FyberCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2E89E1B99C79200D5F95D /* FyberCredentials.swift */; };
+		2BB2E8AB1B99CF9100D5F95D /* FyberSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BB2E8AA1B99CF9100D5F95D /* FyberSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB2E8B11B99CF9100D5F95D /* FyberSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB2E8A61B99CF9100D5F95D /* FyberSDK.framework */; };
+		2BB2E8B81B99CF9100D5F95D /* FyberSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2E8B71B99CF9100D5F95D /* FyberSDKTests.swift */; };
+		2BB2E8BF1B99CFF200D5F95D /* FyberSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B98CE581B99A2530033E134 /* FyberSDK.swift */; };
+		2BB2E8C01B99CFFD00D5F95D /* FyberCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2E89E1B99C79200D5F95D /* FyberCredentials.swift */; };
+		2BB2E8C11B99CFFF00D5F95D /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B361B7E229B00FA79EB /* RequestManager.swift */; };
+		2BB2E8C21B99D00100D5F95D /* OfferWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B161B7E115300FA79EB /* OfferWallViewController.swift */; };
+		2BB2E8C31B99D00D00D5F95D /* OfferWall.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B98CE551B999F790033E134 /* OfferWall.storyboard */; };
+		2BB2E8C41B99D01100D5F95D /* OfferWall.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B98CE551B999F790033E134 /* OfferWall.storyboard */; };
+		2BB2E8C51B99D01200D5F95D /* OfferWall.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B98CE551B999F790033E134 /* OfferWall.storyboard */; };
+		2BB2E8C61B99D01700D5F95D /* OfferWallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B3C1B7F93BC00FA79EB /* OfferWallTableViewCell.swift */; };
+		2BB2E8C71B99D01800D5F95D /* OfferWallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B3C1B7F93BC00FA79EB /* OfferWallTableViewCell.swift */; };
+		2BB2E8C81B99D01A00D5F95D /* OfferWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B161B7E115300FA79EB /* OfferWallViewController.swift */; };
+		2BB2E8C91B99D01D00D5F95D /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B361B7E229B00FA79EB /* RequestManager.swift */; };
+		2BB2E8CA1B99D01F00D5F95D /* FyberCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2E89E1B99C79200D5F95D /* FyberCredentials.swift */; };
+		2BB2E8CB1B99D02200D5F95D /* FyberSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B98CE581B99A2530033E134 /* FyberSDK.swift */; };
 		2BF1E2091B8124B500447B98 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E2081B8124B500447B98 /* FormViewController.swift */; };
-		2BF1E20A1B823D3500447B98 /* FyberSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B361B7E229B00FA79EB /* FyberSDK.swift */; };
+		2BF1E20A1B823D3500447B98 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B361B7E229B00FA79EB /* RequestManager.swift */; };
 		2BF1E20B1B823D3900447B98 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E2081B8124B500447B98 /* FormViewController.swift */; };
-		2BF1E20C1B823D3D00447B98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B161B7E115300FA79EB /* ViewController.swift */; };
+		2BF1E20C1B823D3D00447B98 /* OfferWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B161B7E115300FA79EB /* OfferWallViewController.swift */; };
 		2BF1E20D1B823D4000447B98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B141B7E115300FA79EB /* AppDelegate.swift */; };
-		2BF1E20E1B823D4400447B98 /* FyberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B3C1B7F93BC00FA79EB /* FyberTableViewCell.swift */; };
+		2BF1E20E1B823D4400447B98 /* OfferWallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B288B3C1B7F93BC00FA79EB /* OfferWallTableViewCell.swift */; };
 		2BF1E2141B82564C00447B98 /* SDKStaticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E2131B82564C00447B98 /* SDKStaticTests.swift */; };
 		2BF1E2161B82665300447B98 /* SDKRandomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E2151B82665300447B98 /* SDKRandomTests.swift */; };
 		87469C620482682837C8F2FE /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9814C02627FC473B860C6EE /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -34,20 +55,37 @@
 			remoteGlobalIDString = 2B288B0E1B7E115300FA79EB;
 			remoteInfo = FyberDeveloperChallenge;
 		};
+		2BB2E8B21B99CF9100D5F95D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B288B071B7E115300FA79EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BB2E8A51B99CF9100D5F95D;
+			remoteInfo = FyberSDK;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2B288B0F1B7E115300FA79EB /* FyberDeveloperChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FyberDeveloperChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B288B131B7E115300FA79EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B288B141B7E115300FA79EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B288B161B7E115300FA79EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B288B161B7E115300FA79EB /* OfferWallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferWallViewController.swift; sourceTree = "<group>"; };
 		2B288B191B7E115300FA79EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B288B1B1B7E115300FA79EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2B288B1E1B7E115300FA79EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2B288B241B7E115300FA79EB /* FyberDeveloperChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FyberDeveloperChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B288B291B7E115300FA79EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B288B361B7E229B00FA79EB /* FyberSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FyberSDK.swift; sourceTree = "<group>"; };
-		2B288B3C1B7F93BC00FA79EB /* FyberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FyberTableViewCell.swift; sourceTree = "<group>"; };
+		2B288B361B7E229B00FA79EB /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		2B288B3C1B7F93BC00FA79EB /* OfferWallTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferWallTableViewCell.swift; sourceTree = "<group>"; };
+		2B98CE561B999F790033E134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/OfferWall.storyboard; sourceTree = "<group>"; };
+		2B98CE581B99A2530033E134 /* FyberSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FyberSDK.swift; sourceTree = "<group>"; };
+		2BB2E89E1B99C79200D5F95D /* FyberCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FyberCredentials.swift; sourceTree = "<group>"; };
+		2BB2E8A61B99CF9100D5F95D /* FyberSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FyberSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB2E8A91B99CF9100D5F95D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BB2E8AA1B99CF9100D5F95D /* FyberSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FyberSDK.h; sourceTree = "<group>"; };
+		2BB2E8B01B99CF9100D5F95D /* FyberSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FyberSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB2E8B61B99CF9100D5F95D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BB2E8B71B99CF9100D5F95D /* FyberSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FyberSDKTests.swift; sourceTree = "<group>"; };
+		2BB2E8CC1B99D47300D5F95D /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
 		2BF1E2081B8124B500447B98 /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		2BF1E2131B82564C00447B98 /* SDKStaticTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKStaticTests.swift; sourceTree = "<group>"; };
 		2BF1E2151B82665300447B98 /* SDKRandomTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKRandomTests.swift; sourceTree = "<group>"; };
@@ -74,12 +112,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2BB2E8A21B99CF9100D5F95D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB2E8AD1B99CF9100D5F95D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BB2E8B11B99CF9100D5F95D /* FyberSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		1EF82F3BB97BA3DE84CFC80D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2BB2E8CC1B99D47300D5F95D /* Pods.framework */,
 				C9814C02627FC473B860C6EE /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -91,6 +145,8 @@
 				2BF1E21A1B8283CC00447B98 /* readme.txt */,
 				2B288B111B7E115300FA79EB /* FyberDeveloperChallenge */,
 				2B288B271B7E115300FA79EB /* Tests */,
+				2BB2E8A71B99CF9100D5F95D /* FyberSDK */,
+				2BB2E8B41B99CF9100D5F95D /* FyberSDKTests */,
 				2B288B101B7E115300FA79EB /* Products */,
 				844577173E21E8A3824FD0A7 /* Pods */,
 				1EF82F3BB97BA3DE84CFC80D /* Frameworks */,
@@ -102,6 +158,8 @@
 			children = (
 				2B288B0F1B7E115300FA79EB /* FyberDeveloperChallenge.app */,
 				2B288B241B7E115300FA79EB /* FyberDeveloperChallengeTests.xctest */,
+				2BB2E8A61B99CF9100D5F95D /* FyberSDK.framework */,
+				2BB2E8B01B99CF9100D5F95D /* FyberSDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,7 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				2B288B141B7E115300FA79EB /* AppDelegate.swift */,
-				2BF1E2181B82823100447B98 /* UI */,
+				2BF1E2181B82823100447B98 /* App UI */,
 				2BF1E2191B82823A00447B98 /* SDK */,
 				2B288B121B7E115300FA79EB /* Supporting Files */,
 			);
@@ -146,21 +204,74 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2BF1E2181B82823100447B98 /* UI */ = {
+		2BB2E8A71B99CF9100D5F95D /* FyberSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2BB2E8AA1B99CF9100D5F95D /* FyberSDK.h */,
+				2BB2E8A81B99CF9100D5F95D /* Supporting Files */,
+			);
+			path = FyberSDK;
+			sourceTree = "<group>";
+		};
+		2BB2E8A81B99CF9100D5F95D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BB2E8A91B99CF9100D5F95D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BB2E8B41B99CF9100D5F95D /* FyberSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				2BB2E8B71B99CF9100D5F95D /* FyberSDKTests.swift */,
+				2BB2E8B51B99CF9100D5F95D /* Supporting Files */,
+			);
+			path = FyberSDKTests;
+			sourceTree = "<group>";
+		};
+		2BB2E8B51B99CF9100D5F95D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BB2E8B61B99CF9100D5F95D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BB2E9291B99D61B00D5F95D /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				2B98CE581B99A2530033E134 /* FyberSDK.swift */,
+			);
+			name = Public;
+			sourceTree = "<group>";
+		};
+		2BB2E92A1B99D62300D5F95D /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				2BB2E89E1B99C79200D5F95D /* FyberCredentials.swift */,
+				2B288B361B7E229B00FA79EB /* RequestManager.swift */,
+				2B288B161B7E115300FA79EB /* OfferWallViewController.swift */,
+				2B98CE551B999F790033E134 /* OfferWall.storyboard */,
+				2B288B3C1B7F93BC00FA79EB /* OfferWallTableViewCell.swift */,
+			);
+			name = Private;
+			sourceTree = "<group>";
+		};
+		2BF1E2181B82823100447B98 /* App UI */ = {
 			isa = PBXGroup;
 			children = (
 				2B288B181B7E115300FA79EB /* Main.storyboard */,
-				2B288B161B7E115300FA79EB /* ViewController.swift */,
 				2BF1E2081B8124B500447B98 /* FormViewController.swift */,
-				2B288B3C1B7F93BC00FA79EB /* FyberTableViewCell.swift */,
 			);
-			name = UI;
+			name = "App UI";
 			sourceTree = "<group>";
 		};
 		2BF1E2191B82823A00447B98 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				2B288B361B7E229B00FA79EB /* FyberSDK.swift */,
+				2BB2E9291B99D61B00D5F95D /* Public */,
+				2BB2E92A1B99D62300D5F95D /* Private */,
 			);
 			name = SDK;
 			sourceTree = "<group>";
@@ -175,6 +286,17 @@
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2BB2E8A31B99CF9100D5F95D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BB2E8AB1B99CF9100D5F95D /* FyberSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		2B288B0E1B7E115300FA79EB /* FyberDeveloperChallenge */ = {
@@ -218,6 +340,42 @@
 			productReference = 2B288B241B7E115300FA79EB /* FyberDeveloperChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2BB2E8A51B99CF9100D5F95D /* FyberSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BB2E8B91B99CF9100D5F95D /* Build configuration list for PBXNativeTarget "FyberSDK" */;
+			buildPhases = (
+				2BB2E8A11B99CF9100D5F95D /* Sources */,
+				2BB2E8A21B99CF9100D5F95D /* Frameworks */,
+				2BB2E8A31B99CF9100D5F95D /* Headers */,
+				2BB2E8A41B99CF9100D5F95D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FyberSDK;
+			productName = FyberSDK;
+			productReference = 2BB2E8A61B99CF9100D5F95D /* FyberSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2BB2E8AF1B99CF9100D5F95D /* FyberSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BB2E8BC1B99CF9100D5F95D /* Build configuration list for PBXNativeTarget "FyberSDKTests" */;
+			buildPhases = (
+				2BB2E8AC1B99CF9100D5F95D /* Sources */,
+				2BB2E8AD1B99CF9100D5F95D /* Frameworks */,
+				2BB2E8AE1B99CF9100D5F95D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BB2E8B31B99CF9100D5F95D /* PBXTargetDependency */,
+			);
+			name = FyberSDKTests;
+			productName = FyberSDKTests;
+			productReference = 2BB2E8B01B99CF9100D5F95D /* FyberSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -233,6 +391,12 @@
 					2B288B231B7E115300FA79EB = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = 2B288B0E1B7E115300FA79EB;
+					};
+					2BB2E8A51B99CF9100D5F95D = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					2BB2E8AF1B99CF9100D5F95D = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -251,6 +415,8 @@
 			targets = (
 				2B288B0E1B7E115300FA79EB /* FyberDeveloperChallenge */,
 				2B288B231B7E115300FA79EB /* FyberDeveloperChallengeTests */,
+				2BB2E8A51B99CF9100D5F95D /* FyberSDK */,
+				2BB2E8AF1B99CF9100D5F95D /* FyberSDKTests */,
 			);
 		};
 /* End PBXProject section */
@@ -261,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B288B1A1B7E115300FA79EB /* Main.storyboard in Resources */,
+				2B98CE571B999F790033E134 /* OfferWall.storyboard in Resources */,
 				2B288B1F1B7E115300FA79EB /* LaunchScreen.xib in Resources */,
 				2B288B1C1B7E115300FA79EB /* Images.xcassets in Resources */,
 			);
@@ -270,6 +437,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BB2E8C41B99D01100D5F95D /* OfferWall.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB2E8A41B99CF9100D5F95D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BB2E8C31B99D00D00D5F95D /* OfferWall.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB2E8AE1B99CF9100D5F95D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BB2E8C51B99D01200D5F95D /* OfferWall.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,10 +557,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B288B171B7E115300FA79EB /* ViewController.swift in Sources */,
-				2B288B371B7E229B00FA79EB /* FyberSDK.swift in Sources */,
-				2B288B3D1B7F93BC00FA79EB /* FyberTableViewCell.swift in Sources */,
+				2B288B171B7E115300FA79EB /* OfferWallViewController.swift in Sources */,
+				2B98CE591B99A2530033E134 /* FyberSDK.swift in Sources */,
+				2B288B371B7E229B00FA79EB /* RequestManager.swift in Sources */,
+				2B288B3D1B7F93BC00FA79EB /* OfferWallTableViewCell.swift in Sources */,
 				2BF1E2091B8124B500447B98 /* FormViewController.swift in Sources */,
+				2BB2E89F1B99C79200D5F95D /* FyberCredentials.swift in Sources */,
 				2B288B151B7E115300FA79EB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,13 +571,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BF1E20E1B823D4400447B98 /* FyberTableViewCell.swift in Sources */,
+				2BF1E20E1B823D4400447B98 /* OfferWallTableViewCell.swift in Sources */,
 				2BF1E20B1B823D3900447B98 /* FormViewController.swift in Sources */,
 				2BF1E2141B82564C00447B98 /* SDKStaticTests.swift in Sources */,
-				2BF1E20C1B823D3D00447B98 /* ViewController.swift in Sources */,
+				2B99F8511B99A5110055F530 /* FyberSDK.swift in Sources */,
+				2BB2E8A01B99C79200D5F95D /* FyberCredentials.swift in Sources */,
+				2BF1E20C1B823D3D00447B98 /* OfferWallViewController.swift in Sources */,
 				2BF1E2161B82665300447B98 /* SDKRandomTests.swift in Sources */,
 				2BF1E20D1B823D4000447B98 /* AppDelegate.swift in Sources */,
-				2BF1E20A1B823D3500447B98 /* FyberSDK.swift in Sources */,
+				2BF1E20A1B823D3500447B98 /* RequestManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB2E8A11B99CF9100D5F95D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BB2E8C11B99CFFF00D5F95D /* RequestManager.swift in Sources */,
+				2BB2E8C21B99D00100D5F95D /* OfferWallViewController.swift in Sources */,
+				2BB2E8BF1B99CFF200D5F95D /* FyberSDK.swift in Sources */,
+				2BB2E8C61B99D01700D5F95D /* OfferWallTableViewCell.swift in Sources */,
+				2BB2E8C01B99CFFD00D5F95D /* FyberCredentials.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB2E8AC1B99CF9100D5F95D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BB2E8C71B99D01800D5F95D /* OfferWallTableViewCell.swift in Sources */,
+				2BB2E8CB1B99D02200D5F95D /* FyberSDK.swift in Sources */,
+				2BB2E8CA1B99D01F00D5F95D /* FyberCredentials.swift in Sources */,
+				2BB2E8C81B99D01A00D5F95D /* OfferWallViewController.swift in Sources */,
+				2BB2E8B81B99CF9100D5F95D /* FyberSDKTests.swift in Sources */,
+				2BB2E8C91B99D01D00D5F95D /* RequestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +615,11 @@
 			isa = PBXTargetDependency;
 			target = 2B288B0E1B7E115300FA79EB /* FyberDeveloperChallenge */;
 			targetProxy = 2B288B251B7E115300FA79EB /* PBXContainerItemProxy */;
+		};
+		2BB2E8B31B99CF9100D5F95D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BB2E8A51B99CF9100D5F95D /* FyberSDK */;
+			targetProxy = 2BB2E8B21B99CF9100D5F95D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -420,6 +638,14 @@
 				2B288B1E1B7E115300FA79EB /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		2B98CE551B999F790033E134 /* OfferWall.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B98CE561B999F790033E134 /* Base */,
+			);
+			name = OfferWall.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -568,6 +794,94 @@
 			};
 			name = Release;
 		};
+		2BB2E8BA1B99CF9100D5F95D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FyberSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2BB2E8BB1B99CF9100D5F95D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = FyberSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2BB2E8BD1B99CF9100D5F95D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FyberSDKTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2BB2E8BE1B99CF9100D5F95D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FyberSDKTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -594,6 +908,24 @@
 			buildConfigurations = (
 				2B288B321B7E115300FA79EB /* Debug */,
 				2B288B331B7E115300FA79EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BB2E8B91B99CF9100D5F95D /* Build configuration list for PBXNativeTarget "FyberSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BB2E8BA1B99CF9100D5F95D /* Debug */,
+				2BB2E8BB1B99CF9100D5F95D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BB2E8BC1B99CF9100D5F95D /* Build configuration list for PBXNativeTarget "FyberSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BB2E8BD1B99CF9100D5F95D /* Debug */,
+				2BB2E8BE1B99CF9100D5F95D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

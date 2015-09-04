@@ -1,0 +1,13 @@
+PODS:
+  - CryptoSwift (0.0.13)
+  - SwiftyJSON (2.2.1)
+
+DEPENDENCIES:
+  - CryptoSwift
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  CryptoSwift: 33e2ba400d514a054c69e9f9f6c08a992e42f91c
+  SwiftyJSON: ae2d0a3d68025d136602a33c4ee215091ced3e33
+
+COCOAPODS: 0.37.2

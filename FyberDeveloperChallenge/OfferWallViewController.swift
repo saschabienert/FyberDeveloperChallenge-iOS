@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  OfferWallViewController.swift
 //  FyberDeveloperChallenge
 //
 //  Created by Sascha Bienert on 14/08/15.
@@ -8,9 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class OfferWallViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var formViewController: FormViewController?
+    var credentials: FyberCredentials?
+    var hostViewController: UIViewController?
+    var delegate: OfferDelegate?
+    
     @IBOutlet var tableView: UITableView!
     @IBOutlet var noDataLabel: UILabel!
     var refreshControl:UIRefreshControl!
@@ -44,8 +47,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidAppear(animated)
     }
     
-    @IBAction func enterCredentials() {
-        formViewController?.dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func closeWall() {
+        delegate?.userClosedOffers?()
+        hostViewController?.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func loadOfferWithHostViewController(host:UIViewController)
+    {
+        hostViewController = host
+        refresh(self)
     }
     
     func refresh(sender:AnyObject)
@@ -53,9 +63,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         offers = []
         imageCache = [String:UIImage]()
         
-        let userDefaults = NSUserDefaults.standardUserDefaults()
-        if let appID = userDefaults.objectForKey("appID") as? String, userID = userDefaults.objectForKey("userID") as? String, apiKey = userDefaults.objectForKey("apiKey") as? String {
-            FyberSDK(appID: appID, userID: userID, apiKey: apiKey).requestOffers() {
+        if (credentials != nil)
+        {
+            let requestManager = RequestManager(appID: credentials!.appID, userID: credentials!.userID, apiKey: credentials!.apiKey)
+            requestManager.delegate = delegate
+            requestManager.requestOffers() {
                 [weak self] offers in
                 self?.offers = offers
                 self?.tableView.reloadData()
@@ -67,9 +79,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     })
                 
                 self?.refreshControl.endRefreshing()
+                self?.delegate?.offersDidLoad?()
             }
         } else {
-            
+            delegate?.offersFailedLoad?()
         }
         
         UIView.animateWithDuration(0.5, animations: {
@@ -81,7 +94,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     // MARK: table view stuff
     
-    private let cellReuseIdentifier: String = "FyberTableViewCell"
+    private let cellReuseIdentifier: String = "OfferWallTableViewCell"
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return offers != nil ? offers!.count : 0
@@ -89,9 +102,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         // dequeue or create cell
-        var cell: FyberTableViewCell? = tableView.dequeueReusableCellWithIdentifier(cellReuseIdentifier) as? FyberTableViewCell
+        var cell: OfferWallTableViewCell? = tableView.dequeueReusableCellWithIdentifier(cellReuseIdentifier) as? OfferWallTableViewCell
         if (cell == nil) {
-            cell = FyberTableViewCell(style:UITableViewCellStyle.Subtitle, reuseIdentifier:cellReuseIdentifier)
+            cell = OfferWallTableViewCell(style:UITableViewCellStyle.Subtitle, reuseIdentifier:cellReuseIdentifier)
         }
         
         if ((offers != nil) && offers!.count >= indexPath.row) {
@@ -129,6 +142,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         
         return cell!
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        delegate?.userChosedOffer?(indexPath.row)
+        hostViewController?.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func tableView(tableView: UITableView, didEndDisplayingCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        delegate?.offerDidAppear?(indexPath.row)
     }
 }
 
