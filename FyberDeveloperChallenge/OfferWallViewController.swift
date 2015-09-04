@@ -117,6 +117,7 @@ class OfferWallViewController: UIViewController, UITableViewDelegate, UITableVie
             // check if thumbnail is cached
             if let img = imageCache[offer.thumbnail.sha1()!] {
                 cell?.thumbnailImageView.image = img
+                delegate?.offerDidAppear?(indexPath.row)
             } else {
                 cell?.thumbnailImageView.image = UIImage()
                 // the thumbnail is not cached. download the image data on a background thread
@@ -148,9 +149,4 @@ class OfferWallViewController: UIViewController, UITableViewDelegate, UITableVie
         delegate?.userChosedOffer?(indexPath.row)
         hostViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
-    
-    func tableView(tableView: UITableView, didEndDisplayingCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        delegate?.offerDidAppear?(indexPath.row)
-    }
 }
-
